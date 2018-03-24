@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "LHLPopupSDK"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "show a popup select view."
   s.homepage     = "https://github.com/joycelee720/LHLPopupSDK.git"
   s.license      = "MIT"
