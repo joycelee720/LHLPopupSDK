@@ -99,13 +99,13 @@
     [view addSubview:self];
     //动画出现
     [UIView animateWithDuration:0.3 animations:^{
-        _contentView.frame = CGRectMake(0, self.bounds.size.height-_totalHeight, self.bounds.size.width, _totalHeight);
+        self.contentView.frame = CGRectMake(0, self.bounds.size.height-self.totalHeight, self.bounds.size.width, self.totalHeight);
     }];
 }
 
 - (void)hideView{
     [UIView animateWithDuration:0.3 animations:^{
-        _contentView.frame = CGRectMake(0, self.bounds.size.height, self.bounds.size.width, _totalHeight);
+        self.contentView.frame = CGRectMake(0, self.bounds.size.height, self.bounds.size.width, self.totalHeight);
     } completion:^(BOOL finished) {
         [self removeFromSuperview];
     }];

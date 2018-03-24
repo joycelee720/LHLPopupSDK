@@ -7,8 +7,9 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author       = { "joycelee720" => "1007521788@qq.com" }
   s.source       = { :git => "https://github.com/joycelee720/LHLPopupSDK.git", :tag => s.version }
-  s.source_files  = "LHLPopupSDK/LHLPopupSelectHeader.h"
+  s.ios.source_files  = "LHLPopupSDK/*.{h,m}"
   s.requires_arc = true
+  s.ios.deployment_target = "8.0"
   s.ios.framework  = "UIKit"
-  s.osx.framework  = "AppKit"
+
 end
